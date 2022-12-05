@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mail template</title>
+    <style>
+      .notification-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        color: #000000;
+      }
+      .notification-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+      }
+      .notification-box table td {
+        padding: 5px;
+        vertical-align: top;
+      } 
+      .notification-box .psacc-logo {
+        display: block;
+        width: 230px;
+        height: auto;
+        object-fit: contain;
+        aspect-ratio: 16/9;
+        margin: 0 auto;
+      }
+      .notification-box .progress-banner {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        aspect-ratio: 16/9;
+        margin: 0 auto;
+      }
+      .notification-box .progress-state {
+        display: block;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .notification-box .state-title {
+        line-height: 34px;
+        font-size: 32px;
+      }
+
+      @media only screen and (max-width: 600px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notification-box">
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <img src="./psacc-logo.png" class="psacc-logo" alt="psacc-logo" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <img src="./pickup-banner.png" class="progress-banner" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h1 class="state-title">Your cargo is now ready for pickup!</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Hi @Model.CustomerName</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Your cargo is now ready for pickup at @Model.POD! To know more
+              details about the pickup location, please use the tracker by
+              clicking the button below.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              In some cases, you may need to manually enter the booking number
+              <a href="https://google.com">#127196810344670</a> on the tracker
+              page. Thank you for choosing Span Asia Carrier!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>Thank you for choosing Span Asia Carrier!</p></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./pickup-stage.png" class="progress-state" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
