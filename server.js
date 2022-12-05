@@ -2,12 +2,9 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
 const bodyParser = require("body-parser");
-const axios = require("axios");
-const circularJSON = require("circular-json");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const dotenv = require("dotenv");
-const PW_GMAIL = "pqoohdjazlonbnnd"; //process.env.MAIL_PASS;
 const route = process.env.PORT || 8888;
 
 const cors = require("cors");
