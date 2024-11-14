@@ -1,0 +1,15 @@
+
+
+Go to google and search for "Less secure apps access"
+generate your password or allow less secure apps access
+
+npm run devStart to run the server
+http://localhost:8888/mail
+accepted payload: 
+
+body > raw
+{
+    "data": {
+        "email": "punayjulius04@gmail.com"
+    }
+}
